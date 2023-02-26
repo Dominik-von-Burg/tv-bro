@@ -41,8 +41,7 @@ android {
         getByName("release") {
             isDebuggable = false
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            project.setProperty("crashlytics", true)
+            project.setProperty("crashlytics", false)
         }
     }
 
@@ -51,9 +50,6 @@ android {
         create("generic") {
             dimension = "appstore"
             buildConfigField("Boolean", "BUILT_IN_AUTO_UPDATE", "false")
-            //when distributing as an apk, the size of the distribution apk is more
-            //important than the size after installation
-            manifestPlaceholders["extractNativeLibs"] = "true"
         }
     }
 
