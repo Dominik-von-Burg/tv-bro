@@ -48,6 +48,7 @@ android {
         create("generic") {
             dimension = "appstore"
             buildConfigField("Boolean", "BUILT_IN_AUTO_UPDATE", "false")
+            manifestPlaceholders["extractNativeLibs"] = "false"
         }
     }
 
