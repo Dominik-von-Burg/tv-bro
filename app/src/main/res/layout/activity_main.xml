@@ -37,11 +37,12 @@
                               android:id="@+id/vActionBarScroll">
             <com.phlox.tvwebbrowser.activity.main.view.ActionBar
                 android:id="@+id/vActionBar"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </HorizontalScrollView>
-
-        <com.phlox.tvwebbrowser.activity.main.view.tabs.TabsView
+    </RelativeLayout>
+    
+    <com.phlox.tvwebbrowser.activity.main.view.tabs.TabsView
             android:id="@+id/vTabs"
             android:layout_width="match_parent"
             android:layout_height="30dp"
@@ -51,7 +52,6 @@
             android:nextFocusUp="@+id/ibMenu"
             android:nextFocusDown="@+id/ibCloseTab"
             />
-    </RelativeLayout>
 
     <ImageView
         android:id="@+id/ivMiniatures"
