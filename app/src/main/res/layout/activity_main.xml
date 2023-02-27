@@ -33,7 +33,8 @@
 
         <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
                               android:layout_width="fill_parent"
-                              android:layout_height="wrap_content">
+                              android:layout_height="wrap_content"
+                              android:id="@+id/vActionBarScroll">
             <com.phlox.tvwebbrowser.activity.main.view.ActionBar
                 android:id="@+id/vActionBar"
                 android:layout_width="match_parent"
@@ -44,7 +45,7 @@
             android:id="@+id/vTabs"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_below="@+id/vActionBar"
+            android:layout_below="@+id/vActionBarScroll"
             android:layout_marginTop="5dp"
             android:focusable="true"
             android:nextFocusUp="@+id/ibMenu"
