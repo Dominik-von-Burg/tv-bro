@@ -22,25 +22,26 @@
         android:id="@+id/progressBar"
         android:visibility="visible" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/rlActionBar"
-        android:background="@color/top_bar_background"
-        android:elevation="2dp"
-        android:clipChildren="false"
-        android:clipToPadding="false">
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/vActionBarScroll">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlActionBar"
+            android:background="@color/top_bar_background"
+            android:elevation="2dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
 
-        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-                              android:layout_width="fill_parent"
-                              android:layout_height="wrap_content"
-                              android:id="@+id/vActionBarScroll">
             <com.phlox.tvwebbrowser.activity.main.view.ActionBar
                 android:id="@+id/vActionBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-        </HorizontalScrollView>
-    </RelativeLayout>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
     
     <com.phlox.tvwebbrowser.activity.main.view.tabs.TabsView
             android:id="@+id/vTabs"
