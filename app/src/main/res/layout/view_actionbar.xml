@@ -17,18 +17,6 @@
       android:contentDescription="@string/close_application" />
 
   <ImageButton
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/ibVoiceSearch"
-      android:src="@drawable/ic_mic_none_grey_900_36dp"
-      android:nextFocusRight="@+id/ibHistory"
-      android:nextFocusDown="@+id/vTabs"
-      android:background="@drawable/button_bg_selector"
-      android:layout_marginEnd="5dp"
-      android:layout_marginTop="5dp"
-      android:contentDescription="@string/voice_search" />
-
-  <ImageButton
       android:id="@+id/ibHistory"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
