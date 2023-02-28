@@ -5,7 +5,7 @@
     tools:orientation="horizontal">
     
   <FrameLayout
-      android:layout_width="match_parent"
+      android:layout_width="20dp"
       android:layout_height="wrap_content"
       android:layout_alignWithParentIfMissing="true"
       android:background="@color/top_bar_background"
